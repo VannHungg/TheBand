@@ -17,3 +17,48 @@
 4. Kiểu dáng(kiểu chữ,...)
 */
 
+html{
+    font-family: "Lato", sans-serif;
+}
+
+#main {
+
+}
+
+#header {
+    height: 46.5px;
+    background-color: #000;
+}
+
+#nav li{
+    display: inline-block;
+}
+
+#nav li a{
+    text-decoration: none;
+    color: #fff;
+    line-height: 46.5px;
+    padding: 0 24px;
+    display: inline-block;
+}
+
+#nav li:hover a{
+    color: #000;
+    background-color: #ccc;
+}
+
+#nav li .subnav{
+    display: none;
+}
+
+#slider {
+
+}
+
+#content {
+
+}
+
+#footer {
+
+}

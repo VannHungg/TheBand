@@ -1,5 +1,9 @@
 /*Moblie*/
 @media (max-width: 46.1875em) {
+    .s-col-full {
+        width: 100%;
+    }
+
     #header {
         overflow: hidden;
     }
@@ -36,6 +40,10 @@
     #nav .subnav a {
         color: #fff;
         padding: 5px 41px;
+    }
+
+    #content .member-ing {
+        width: 60%;
     }
 
 }

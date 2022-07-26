@@ -102,9 +102,13 @@ html{
     top: 0;
     left: 0;
     right: 0;
-    height: 46.5px;
+    height: 46px;
     background-color: #000;
     z-index: 1;
+}
+
+#nav {
+    display: inline-block;
 }
 
 #nav > li {
@@ -116,7 +120,6 @@ html{
 }
 
 #nav li{
-    /* display: inline-block; */
     position: relative;
 }
 
@@ -127,7 +130,7 @@ html{
 
 #nav  li  a{
     text-decoration: none;
-    line-height: 46.5px;
+    line-height: 46px;
     padding: 0 20px;
     display: block;
 }  
@@ -145,9 +148,9 @@ html{
 #nav .subnav{
     display: none; 
     min-width: 160px;
+    position: absolute;
     top: 100%;
     left: 0;
-    position: absolute;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
@@ -163,28 +166,48 @@ html{
 }
 
 /*begin: search button*/
-#header .search-button {
+#header .search-button,
+#header .mobile-menu-button {
+    /*Áp dụng cả hai để chỉnh button*/
+    /* Cách tự suy nghĩ */
     position: absolute;
     right: 0;
     top: 0;
+
+    /*Cách video dùng */
+    float: right;
     padding: 0 21px;
 }
 
-#header .search-icon{
-    color: #fff;
-    line-height: 46.5px;
+#header .mobile-menu-button {
+    display: none;
 }
 
-#header .search-button:hover{
+#header .menu-icon,
+#header .search-icon {
+    color: #fff;
+    font-size: 20px;
+    line-height: 46px;
+}
+
+#header .search-button:hover {
     background-color: #f44336;
     cursor: pointer;
+}
+
+#header .mobile-menu-button:hover {
+    background-color: #ccc;
+}
+
+#header .mobile-menu-button:hover .menu-icon{
+    color: #000;
 }
 /*end: search button*/
 
 
 #slider {
     position: relative;
-    margin-top: 46.5px;
+    margin-top: 46px;
     padding-top: 50%;
     background: url(/assets/img/chicago.jpg) top center /cover no-repeat;
 }
@@ -219,7 +242,8 @@ html{
 
 #content .content-section{
     width: 800px;
-    padding: 64px 0 112px;
+    max-width: 100%;
+    padding: 64px 16px 112px;
     margin-left: auto;
     margin-right: auto;
 }

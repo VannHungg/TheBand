@@ -1,7 +1,46 @@
+/*Mobile và tablet*/
+@media (max-width: 63.9375em) {
+    .button {
+        padding: 16px 16px;
+    }
+
+    .contact-info {
+        line-height: 2;
+    }
+
+    .contact-form .form-control {
+        padding: 15px;
+    }
+
+
+    #footer .social-list a{
+        font-size: 42px;
+        margin: 0 8px;
+    }
+
+    #footer .copy-right a {
+        padding: 12px 0;
+        display: inline-block;
+    }
+}
+
+/*Tablet*/
+@media (min-width:46.25em) and (max-width: 63.9375em) { 
+    
+}
+
 /*Moblie*/
 @media (max-width: 46.1875em) {
     .s-col-full {
-        width: 100%;
+        width: 100% !important;
+    }
+
+    .s-full-width {
+        width: 100% !important;
+    }
+
+    .s-mt-8 {
+        margin-top: 8px !important;
     }
 
     #header {
@@ -46,4 +85,7 @@
         width: 60%;
     }
 
+    #content .contact-form {
+        margin-top: 32px;
+    }
 }
